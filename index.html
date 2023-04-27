@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Guess Game</title>
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="overlay">
+      <div class="content">
+
+        <nav>
+          <i class="fa fa-brands fa-joomla fa-2x"></i>
+          <i class="fa fa-hamburger fa-2x"> </i>
+        </nav>
+
+
+        <header>
+          <div class="header-logo">
+
+            <i class="fa fa-life-ring fa-4x"></i>
+          </div>
+          <div> <i class="fa fa-star"></i>
+            Your Score: <span class="your-score">20</span>
+          </div>
+          <div> <i class="fa fa-dice"></i>
+            Chances Left: <span class="chances">5</span>
+          </div>
+          <div> <i class="fa fa-trophy"></i>
+            High Score: <span class="high-score">0</span>
+          </div>
+        </header>
+
+        <section>
+          <div>
+            <i class="fa-solid fa-grip-lines-vertical fa-2xl"></i>
+            <h1 class="user-game-state">Start Guessing!</h1>
+            <i class="fa-solid fa-grip-lines-vertical fa-2xl"></i>
+          </div>
+
+          <div class="between">Between <span>5</span> and<span>20</span></div>
+          <form>
+            <input type="number" name="" id="number">
+
+            <div class="footer">
+              <i class="fa fa-rotate-left try-again-btn fa-1x"></i>
+
+              <button class="submit" type="submit"><i class="fa fa-check-circle"> </i> Check</button>
+            </div>
+
+          </form>
+        </section>
+
+
+
+
+      </div>
+    </div>
+
+    <div class="user-loss-ui hidden">
+
+      <h2>Sorry Pal 😓 maybe you arent much of a good guesser</h2>
+      <p>But get what😄, You can try again</p>
+
+      <p>I got you💪</p>
+      <button class="try-again-game-ender">Try Again</button>
+    </div>
+  </div>
+  <div class="back-drop"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
